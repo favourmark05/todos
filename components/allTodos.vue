@@ -8,11 +8,11 @@
         v-for="(todo, index) in todos"
         :key="index" 
       >
-        <div class="card-header bg-transparent border-success">
-          {{ todo.title }}
+        <div class="card-header bg-transparent border-success text-uppercase">
+          <h1>{{ todo.title }}</h1>
         </div>
         <div class="card-body text-success">
-          <h5 class="card-title">{{ todo.title }}</h5>
+          <!-- <h5 class="card-title">{{ todo.title }}</h5> -->
           <p class="card-text" v-if="todo.description">
             {{ todo.description }}
           </p>
