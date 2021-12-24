@@ -10,6 +10,7 @@ export default {
      */
     target: 'server',
     target: 'static',
+    ssr: false,
     /*
      ** Headers of the page
      ** See https://nuxtjs.org/api/configuration-head
@@ -34,6 +35,11 @@ export default {
      ** https://nuxtjs.org/guide/plugins
      */
     plugins: [],
+    // export default {
+    //     generate: {
+    //       fallback: true
+    //     }
+    //   },      
     /*
      ** Auto import components
      ** See https://nuxtjs.org/api/configuration-components
