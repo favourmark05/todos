@@ -1,7 +1,7 @@
 <template>
   <div class="container">
       <div class="form-group">
-          <form action="" @submit.prevent="addTodo">
+          <form action="" @submit.prevent="addTodo" >
               <div class="mb-3">
                   <label for="todoHeading" class="form-label" >Todo Heading</label>
                   <input type="text" class="form-control" v-model="title">
@@ -10,7 +10,7 @@
                   <label for="todoDescription" class="form-label">Todo Description</label>
                   <textarea name="description" id=""  rows="10" class="form-control" v-model="description"></textarea>
               </div>
-              <button class="btn btn-primary">Add Todo</button>
+              <button class="btn btn-primary" :disabled="!title || !description">Add Todo</button>
           </form>
       </div>
   </div>
