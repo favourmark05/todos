@@ -8,7 +8,7 @@ export default {
      ** Nuxt target
      ** See https://nuxtjs.org/api/configuration-target
      */
-    target: 'server',
+    // target: 'server',
     target: 'static',
     ssr: false,
     /*
@@ -35,11 +35,7 @@ export default {
      ** https://nuxtjs.org/guide/plugins
      */
     plugins: [],
-    // export default {
-    //     generate: {
-    //       fallback: true
-    //     }
-    //   },      
+    //       
     /*
      ** Auto import components
      ** See https://nuxtjs.org/api/configuration-components
